@@ -3,8 +3,8 @@
 This package based on [Simple PHP SSO integration for Laravel](https://github.com/zefy/laravel-sso) package.
 
 ### Requirements
-* Laravel 5.5+
-* PHP 7.1+
+* Laravel 5.5+ (5.5, 6.x, 7.x, 8.x, 9.x, 10.x, 11.x)
+* PHP 7.1+|8.0+
 
 ### Documentation
 Please read [Simple PHP SSO integration for Laravel docs](https://github.com/zefy/laravel-sso).
