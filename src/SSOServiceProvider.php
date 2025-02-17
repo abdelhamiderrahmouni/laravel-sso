@@ -1,9 +1,9 @@
 <?php
 
-namespace Nddcoder\LaravelSSO;
+namespace AbdelhamidErrahmouni\LaravelSSO;
 
 use Illuminate\Support\ServiceProvider;
-use Nddcoder\LaravelSSO\Commands;
+use AbdelhamidErrahmouni\LaravelSSO\Commands;
 
 class SSOServiceProvider extends ServiceProvider
 {
@@ -43,7 +43,7 @@ class SSOServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make(\Nddcoder\LaravelSSO\Controllers\ServerController::class);
+        $this->app->make(\AbdelhamidErrahmouni\LaravelSSO\Controllers\ServerController::class);
     }
 
     /**

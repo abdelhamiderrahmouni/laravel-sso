@@ -1,10 +1,10 @@
 <?php
 
-namespace Nddcoder\LaravelSSO\Middleware;
+namespace AbdelhamidErrahmouni\LaravelSSO\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Nddcoder\LaravelSSO\LaravelSSOBroker;
+use AbdelhamidErrahmouni\LaravelSSO\LaravelSSOBroker;
 
 class SSOAutoLogin
 {

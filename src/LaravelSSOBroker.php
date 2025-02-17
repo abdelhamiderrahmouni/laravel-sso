@@ -1,9 +1,9 @@
 <?php
 
-namespace Nddcoder\LaravelSSO;
+namespace AbdelhamidErrahmouni\LaravelSSO;
 
 use Illuminate\Support\Facades\Cookie;
-use Nddcoder\LaravelSSO\Exceptions\MissingConfigurationException;
+use AbdelhamidErrahmouni\LaravelSSO\Exceptions\MissingConfigurationException;
 use Zefy\SimpleSSO\SSOBroker;
 use GuzzleHttp;
 
@@ -12,7 +12,7 @@ use GuzzleHttp;
  * First of all, you need to implement abstract functions in your own class.
  * Secondly, you should create a page which will be your SSO server.
  *
- * @package Nddcoder\SimpleSSO
+ * @package AbdelhamidErrahmouni\SimpleSSO
  */
 class LaravelSSOBroker extends SSOBroker
 {

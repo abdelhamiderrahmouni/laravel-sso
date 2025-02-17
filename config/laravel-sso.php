@@ -47,12 +47,12 @@ return [
     ],
 
     // Broker model use when find broker
-    'brokersModel' => Nddcoder\LaravelSSO\Models\Broker::class,
+    'brokersModel' => AbdelhamidErrahmouni\LaravelSSO\Models\Broker::class,
 
     // Field use when find broker
     'brokerIdField' => 'name',
 
-    // Table used in Nddcoder\LaravelSSO\Models\Broker model
+    // Table used in AbdelhamidErrahmouni\LaravelSSO\Models\Broker model
     'brokersTable' => 'brokers',
 
     // Logged in user fields sent to brokers.

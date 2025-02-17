@@ -1,6 +1,6 @@
 <?php
 
-namespace Nddcoder\LaravelSSO\Commands;
+namespace AbdelhamidErrahmouni\LaravelSSO\Commands;
 
 use Illuminate\Console\Command;
 

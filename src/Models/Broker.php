@@ -1,6 +1,6 @@
 <?php
 
-namespace Nddcoder\LaravelSSO\Models;
+namespace AbdelhamidErrahmouni\LaravelSSO\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

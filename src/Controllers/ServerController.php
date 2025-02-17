@@ -1,10 +1,10 @@
 <?php
 
-namespace Nddcoder\LaravelSSO\Controllers;
+namespace AbdelhamidErrahmouni\LaravelSSO\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
-use Nddcoder\LaravelSSO\LaravelSSOServer;
+use AbdelhamidErrahmouni\LaravelSSO\LaravelSSOServer;
 
 class ServerController extends BaseController
 {

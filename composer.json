@@ -1,14 +1,20 @@
 {
-    "name": "nddcoder/laravel-sso",
-    "description": "Simple Laravel SSO integration (Based on zefy/laravel-sso)",
+    "name": "abdelhamiderrahmouni/laravel-sso",
+    "description": "Simple Laravel SSO integration (A fork of nddcoder/laravel-sso based on and zefy/laravel-sso)",
     "keywords": ["laravel", "sso", "authentication", "login"],
-    "homepage": "https://github.com/dangdungcntt/laravel-sso",
+    "homepage": "https://github.com/abdelhamiderrahmouni/laravel-sso",
     "license": "MIT",
     "authors": [
       {
         "name": "Dung Nguyen Dang",
         "email": "dangdungcntt@gmail.com",
         "homepage": "https://github.com/dangdungcntt",
+        "role": "Developer"
+      },
+      {
+        "name": "Abdelhamid Errahmouni",
+        "email": "abdelhamid.errahmouni@gmail.com",
+        "homepage": "https://github.com/abdelhamiderrahmouni",
         "role": "Developer"
       }
     ],
@@ -20,13 +26,13 @@
     },
     "autoload": {
       "psr-4": {
-        "Nddcoder\\LaravelSSO\\": "src/"
+        "AbdelhamidErrahmouni\\LaravelSSO\\": "src/"
       }
     },
     "extra": {
       "laravel": {
         "providers": [
-            "Nddcoder\\LaravelSSO\\SSOServiceProvider"
+            "AbdelhamidErrahmouni\\LaravelSSO\\SSOServiceProvider"
         ]
       }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nddcoder\LaravelSSO\Exceptions;
+namespace AbdelhamidErrahmouni\LaravelSSO\Exceptions;
 
 use Exception;
 

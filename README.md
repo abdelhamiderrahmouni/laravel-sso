@@ -13,19 +13,19 @@ Please read [Simple PHP SSO integration for Laravel docs](https://github.com/zef
 ### Server
 Install this package using composer.
 ```shell
-$ composer require nddcoder/laravel-sso
+$ composer require abdelhamiderrahmouni/laravel-sso
 ```
 
 
 Copy config file to Laravel project `config/` folder.
 ```shell
-$ php artisan vendor:publish --provider="Nddcoder\LaravelSSO\SSOServiceProvider"
+$ php artisan vendor:publish --provider="AbdelhamidErrahmouni\LaravelSSO\SSOServiceProvider"
 ```
 
 
 Create table where all brokers will be saved.
 ```shell
-$ php artisan migrate --path=vendor/nddcoder/laravel-sso/database/migrations
+$ php artisan migrate --path=vendor/abdelhamiderrahmouni/laravel-sso/database/migrations
 ```
 
 
@@ -58,13 +58,13 @@ $ php artisan sso:broker:create {name}
 ### Broker
 Install this package using composer.
 ```shell
-$ composer require nddcoder/laravel-sso
+$ composer require abdelhamiderrahmouni/laravel-sso
 ```
 
 
 Copy config file to Laravel project `config/` folder.
 ```shell
-$ php artisan vendor:publish --provider="Nddcoder\LaravelSSO\SSOServiceProvider"
+$ php artisan vendor:publish --provider="AbdelhamidErrahmouni\LaravelSSO\SSOServiceProvider"
 ```
 
 
@@ -83,10 +83,10 @@ SSO_BROKER_SECRET=
 
 
 
-Edit your `app/Http/Kernel.php` by adding `\Nddcoder\LaravelSSO\Middleware\SSOAutoLogin::class` middleware to `$routeMiddleware` array. It should look like this:
+Edit your `app/Http/Kernel.php` by adding `\AbdelhamidErrahmouni\LaravelSSO\Middleware\SSOAutoLogin::class` middleware to `$routeMiddleware` array. It should look like this:
 ```php
 protected $routeMiddleware = [
-    'auto_login' => \Nddcoder\LaravelSSO\Middleware\SSOAutoLogin::class,
+    'auto_login' => \AbdelhamidErrahmouni\LaravelSSO\Middleware\SSOAutoLogin::class,
     //...
 ];
 ```
@@ -100,7 +100,7 @@ Last but not least, you need to edit `app/Http/Controllers/Auth/LoginController.
 ```php
 protected function attemptLogin(Request $request)
 {
-    $broker = new \Nddcoder\LaravelSSO\LaravelSSOBroker;
+    $broker = new \AbdelhamidErrahmouni\LaravelSSO\LaravelSSOBroker;
     
     $credentials = $this->credentials($request);
     return $broker->login($credentials[$this->username()], $credentials['password']);
@@ -108,7 +108,7 @@ protected function attemptLogin(Request $request)
 
 public function logout(Request $request)
 {
-    $broker = new \Nddcoder\LaravelSSO\LaravelSSOBroker;
+    $broker = new \AbdelhamidErrahmouni\LaravelSSO\LaravelSSOBroker;
     
     $broker->logout();
     
