@@ -6,7 +6,7 @@
 
 Route::middleware(config('laravel-sso.routeGroupMiddleware'))
     ->prefix(trim(config('laravel-sso.routePrefix'), ' /'))
-    ->group(function (): void {
+    ->group(function () {
         Route::post('login', 'AbdelhamidErrahmouni\LaravelSSO\Controllers\ServerController@login');
         Route::post('logout', 'AbdelhamidErrahmouni\LaravelSSO\Controllers\ServerController@logout');
         Route::middleware(config('laravel-sso.routeAttachMiddleware'))
